@@ -1,0 +1,31 @@
+---
+interface Props {
+	title: string;
+}
+const { title } = Astro.props;
+
+// Supports weights 100-900
+import '@fontsource-variable/onest';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Servicios de Aire Acondicionado de calidad" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	html {
+		scroll-behavior: smooth;
+	}	
+	body {
+		font-family: 'Onest Variable', sans-serif;
+	}	
+</style>
