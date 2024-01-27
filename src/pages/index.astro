@@ -1,10 +1,134 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+import Home from "../icons/Home.astro"
+import About from "../icons/About.astro"
+import Services from "../icons/Services.astro"
+import Works from "../icons/Works.astro"
+import Contact from "../icons/Contact.astro"
+import Menu from "../icons/Menu.astro"
+import Download from '../icons/Download.astro';
 ---
 
 <Layout title="VentiFresh F&R">
 
-	
+	<nav class="w-full h-20 bg-transparent fixed top-0 z-10">
+		<div class="w-full h-full max-w-7xl mx-auto">
+				<div class="w-full h-full flex items-center justify-between text-white px-5">
+					<h1>VentiFresh F&R</h1>
+
+					<ul class="hidden">
+						<li>
+							<Home />
+							<a href="#home">Inicio</a>
+						</li>
+						<li>
+							<About />
+							<a href="#about">Nosotros</a>
+						</li>
+						<li>
+							<Services />
+							<a href="#services">Servicios</a>
+						</li>
+						<li>
+							<Works />
+							<a href="#works">Trabajos</a>
+						</li>
+						<li>
+							<Contact />
+							<a href="#contact">Contacto</a>
+						</li>
+					</ul>
+
+					<figure>
+						<Menu />
+					</figure>
+				</div>
+		</div>
+	</nav>
+
+
+	<header class="w-full h-[90dvh] bg-white">
+		<div class="w-full h-full relative">
+			<img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1545649311-24d0ac00ae82?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+			<div class="absolute top-0 left-0 inset-0 bg-black/50 text-white">
+				<div class="w-full h-full flex flex-col items-center justify-center">
+					<h2>Soluciones efectivas</h2>
+					<span>Confia en VentiFresh</span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<main class="bg-white">
+
+		<section id="about" class="px-5 py-10">
+			<div class="flex flex-col gap-5">
+				<aside>
+					<h3 class="text-primary-700 text-3xl font-semibold mb-5">Sobre Nosotros</h3>
+					<div class="flex flex-col gap-3 mb-3">
+						<p class="text-paragraph-800 leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio recusandae rem corrupti alias voluptate voluptatum ratione quibusdam illo inventore veniam?</p>
+						<p class="text-paragraph-800 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus expedita est placeat mollitia deleniti consequatur aliquam.</p>
+						<p class="text-paragraph-800 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, mollitia. Corporis sequi aspernatur deserunt earum quibusdam nostrum numquam blanditiis. Iste incidunt dolores, vero cumque neque aliquid veniam tempore enim!</p>
+					</div>
+					<button class="flex items-center gap-2 bg-primary-500 text-white px-6 py-2 rounded-lg">
+						<Download />
+						Descargar Brochure
+					</button>
+				</aside>
+				<picture class="w-full h-[50dvh] relative">
+					<img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+					<div class="absolute bottom-0 left-0 w-full bg-secundary-800/70 backdrop-blur-3xl px-2 py-1">
+						<span class="text-white">Informacion de la imagen</span>
+					</div>
+				</picture>
+			</div>
+			<hr class="my-5">
+			<div class="grid grid-cols-1 auto-rows-[250px] gap-5">
+				<article class="relative rounded-lg overflow-hidden group">
+					<img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1550998251-1e18917c975c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+					<div class="absolute top-0 left-0 inset-0 bg-neutral-800/50">
+						<div class="h-full flex items-center justify-center">
+							<strong class="text-primary-100 text-4xl tracking-wider">Visión</strong>
+						</div>
+					</div>
+					<div class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500 top-0 left-0 inset-0 bg-primary-700">
+						<div class="h-full flex items-center justify-center">
+							<p class="text-white text-center leading-relaxed p-5 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni repellat debitis ex adipisci. Veritatis nesciunt eveniet sequi temporibus saepe quibusdam dolor porro odit doloribus mollitia, quos, sint tempora quia minus cum hic non dolores reiciendis? Itaque veniam consequatur laborum voluptatibus.</p>
+						</div>
+					</div>
+				</article>
+				<article class="relative rounded-lg overflow-hidden group">
+					<img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1590756254933-2873d72a83b6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+					<div class="absolute top-0 left-0 inset-0 bg-neutral-800/50">
+						<div class="h-full flex items-center justify-center">
+							<strong class="text-primary-100 text-4xl tracking-wider">Misión</strong>
+						</div>
+					</div>
+					<div class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500 top-0 left-0 inset-0 bg-primary-700">
+						<div class="h-full flex items-center justify-center">
+							<p class="text-white text-center leading-relaxed p-5 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos rerum ipsum in officia animi corrupti laudantium velit nam suscipit ratione dicta sapiente, ipsa autem cum quaerat doloribus voluptatibus vel. Velit deserunt tenetur aut error!</p>
+						</div>
+					</div>
+				</article>
+				<article class="relative rounded-lg overflow-hidden group">
+					<img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1617861648989-76a572012089?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+					<div class="absolute top-0 left-0 inset-0 bg-neutral-800/50">
+						<div class="h-full flex items-center justify-center">
+							<strong class="text-primary-100 text-4xl tracking-wider">Valores</strong>
+						</div>
+					</div>
+					<div class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500 top-0 left-0 inset-0 bg-primary-700">
+						<div class="h-full flex items-center justify-center">
+							<p class="text-white text-center leading-relaxed p-5 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius beatae itaque pariatur officiis nobis, sit accusamus libero adipisci at aspernatur maiores dolor, doloribus ipsa exercitationem in, natus molestias nostrum quod distinctio odit dolorem. Sint non illum nam eius.</p>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+	</main>
 
 </Layout>
 
