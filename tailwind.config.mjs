@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  theme: {
-    extend: {
-      colors: {
+	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+	theme: {
+		extend: {
+			colors: {
 				primary: {
 					50: "#D4EEFA",
 					100: "#AADDF5",
@@ -36,12 +36,12 @@ export default {
 					400: "#D7DCDF",
 					500: "#CFD5D8",
 					600: "#A8B3B8",
-					700: "#819199     ",
+					700: "#819199",
 					800: "#5F6D75",
 					900: "#3F494E"
 				}
 			}
-    },
-  },
-  plugins: [],
+		},
+	},
+	plugins: [],
 };
