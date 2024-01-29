@@ -12,169 +12,343 @@ import Vision from "../icons/Vision.astro";
 import Valores from "../icons/Valores.astro";
 import Check from "../icons/Check.astro";
 import Service from "../icons/Service.astro";
+import Tool from "../icons/Tool.astro";
 ---
 
 <Layout title="VentiFresh F&R">
-	<nav class="w-full h-20 bg-transparent fixed top-0 z-10 px-20 py-5">
-		<div class="w-full h-full flex items-center justify-between text-white">
-			<h1>VentiFresh F&R</h1>
+  <nav class="w-full h-20 bg-transparent fixed top-0 z-10 px-20 py-5">
+    <div class="w-full h-full flex items-center justify-between text-white">
+      <h1>VentiFresh F&R</h1>
 
-			<ul class="hidden">
-				<li>
-					<Home />
-					<a href="#home">Inicio</a>
-				</li>
-				<li>
-					<About />
-					<a href="#about">Nosotros</a>
-				</li>
-				<li>
-					<Services />
-					<a href="#services">Servicios</a>
-				</li>
-				<li>
-					<Works />
-					<a href="#works">Trabajos</a>
-				</li>
-				<li>
-					<Contact />
-					<a href="#contact">Contacto</a>
-				</li>
-			</ul>
+      <ul class="hidden">
+        <li>
+          <Home />
+          <a href="#home">Inicio</a>
+        </li>
+        <li>
+          <About />
+          <a href="#about">Nosotros</a>
+        </li>
+        <li>
+          <Services />
+          <a href="#services">Servicios</a>
+        </li>
+        <li>
+          <Works />
+          <a href="#works">Trabajos</a>
+        </li>
+        <li>
+          <Contact />
+          <a href="#contact">Contacto</a>
+        </li>
+      </ul>
 
-			<figure>
-				<Menu />
-			</figure>
-		</div>
-	</nav>
+      <figure>
+        <Menu />
+      </figure>
+    </div>
+  </nav>
 
-	<header class="w-full h-[90dvh] bg-white">
-		<div class="w-full h-full relative">
-			<img
-				class="w-full h-full object-cover"
-				src="https://images.unsplash.com/photo-1545649311-24d0ac00ae82?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-				alt="Imagen de Ventifresh F&R"
-			/>
+  <header class="w-full h-[90dvh] bg-white">
+    <div class="w-full h-full relative">
+      <img
+        class="w-full h-full object-cover"
+        src="https://images.unsplash.com/photo-1545649311-24d0ac00ae82?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Imagen de Ventifresh F&R"
+      />
 
-			<div class="absolute top-0 left-0 inset-0 bg-black/50 text-white">
-				<div class="w-full h-full flex flex-col items-center justify-center">
-					<h2>Soluciones efectivas</h2>
-					<span>Confia en VentiFresh</span>
-				</div>
-			</div>
-		</div>
-	</header>
+      <div class="absolute top-0 left-0 inset-0 bg-black/50 text-white">
+        <div class="w-full h-full flex flex-col items-center justify-center">
+          <h2>Soluciones efectivas</h2>
+          <span>Confia en VentiFresh</span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-	<main class="bg-white">
-		<section id="about" class="py-20 px-5">
-			<div class="max-w-7xl mx-auto">
-				<header>
-					<p class="text-paragraph-600 md:text-center text-base font-medium">
-						Información
-					</p>
-					<h2 class="text-primary-800 md:text-center font-bold text-3xl md:text-4xl tracking-wide mb-3 md:mb-10">
-						Sobre nosotros
-					</h2>
-				</header>
-	
-				<div class="flex flex-col md:flex-row gap-5 lg:gap-10">
-					<picture class="md:flex-1">
-						<img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1482286571573-959937392112?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-					</picture>
-	
-					<div class="md:flex-1 flex flex-col gap-2 lg:gap-6">
-						<h3 class="p-2 text-xl lg:text-2xl font-semibold text-secundary-900 border-l-4 border-secundary-800">
-							Lorem, ipsum dolor flous.
-						</h3>
-						<p class="text-paragraph-800 text-base lg:text-lg font-light leading-relaxed text-pretty">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, magni laudantium. Animi totam voluptatem ab quod molestiae veniam asperiores, nulla aut perspiciatis, maiores ipsum ullam vitae amet. Pariatur voluptas libero, eveniet, minus necessitatibus qui voluptate accusamus consequuntur iure vitae accusantium dolorum mollitia omnis rem quidem aliquid placeat. Accusamus, ad quod?
-						</p>
-						<ul class="flex flex-col gap-2 text-base lg:text-lg">
-							<li class="flex gap-2">
-								<Check class="min-w-7"/>
-								<p>Lorem ipsum dolor sit amet consectetur.</p>
-							</li>
-							<li class="flex gap-2">
-								<Check class="min-w-7"/>
-								<p>Lorem ipsum dolor sit amet.</p>
-							</li>
-							<li class="flex gap-2">
-								<Check class="min-w-7"/>
-								<p>Lorem ipsum sit amet consectetur.</p>
-							</li>
-						</ul>
-					</div>
-				</div>
+  <main class="bg-white">
+    <section id="about" class="py-20 px-5">
+      <div class="max-w-7xl mx-auto">
+        <header>
+          <p class="text-paragraph-600 md:text-center text-base font-medium">
+            Información
+          </p>
+          <h2
+            class="text-primary-800 md:text-center font-bold text-3xl md:text-4xl tracking-wide mb-3 md:mb-10"
+          >
+            Sobre nosotros
+          </h2>
+        </header>
 
-				<div class="pt-20">
-					<div class="max-w-7xl mx-auto">
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-							<article class="relative bg-paragraph-50/50 rounded-lg shadow p-4 flex flex-col gap-2 items-center">
-								<Mision class="bg-primary-500 text-white p-1 size-9 rounded-full"/>
-								<h3 class="font-medium tracking-wide">Mision</h3>
-								<p class="text-center text-paragraph-800 leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, illo quisquam. Deserunt nulla sit rem vel possimus numquam, voluptates obcaecati.</p>
-							</article>
-							<article class="relative md:-top-10 bg-paragraph-50/50 rounded-lg shadow p-4 flex flex-col gap-2 items-center">
-								<Valores class="bg-primary-500 text-white p-1 size-9 rounded-full"/>
-								<h3 class="font-medium tracking-wide">Valores</h3>
-								<p class="text-center text-paragraph-800 leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, illo quisquam. Deserunt nulla sit rem vel possimus numquam, voluptates obcaecati.</p>
-							</article>
-							<article class="relative bg-paragraph-50/50 rounded-lg shadow p-4 flex flex-col gap-2 items-center">
-								<Vision class="bg-primary-500 text-white p-1 size-9 rounded-full"/>
-								<h3 class="font-medium tracking-wide">Vision</h3>
-								<p class="text-center text-paragraph-800 leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, illo quisquam. Deserunt nulla sit rem vel possimus numquam, voluptates obcaecati.</p>
-							</article>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</section>
+        <div class="flex flex-col md:flex-row gap-5 lg:gap-10">
+          <picture class="md:flex-1">
+            <img
+              class="w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1482286571573-959937392112?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </picture>
 
-		
+          <div class="md:flex-1 flex flex-col gap-2 lg:gap-6">
+            <h3
+              class="p-2 text-xl lg:text-2xl font-semibold text-secundary-900 border-l-4 border-secundary-800"
+            >
+              Lorem, ipsum dolor flous.
+            </h3>
+            <p
+              class="text-paragraph-800 text-base lg:text-lg font-light leading-relaxed text-pretty"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+              magni laudantium. Animi totam voluptatem ab quod molestiae veniam
+              asperiores, nulla aut perspiciatis, maiores ipsum ullam vitae
+              amet. Pariatur voluptas libero, eveniet, minus necessitatibus qui
+              voluptate accusamus consequuntur iure vitae accusantium dolorum
+              mollitia omnis rem quidem aliquid placeat. Accusamus, ad quod?
+            </p>
+            <ul class="flex flex-col gap-2 text-base lg:text-lg">
+              <li class="flex gap-2">
+                <Check class="min-w-7" />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </li>
+              <li class="flex gap-2">
+                <Check class="min-w-7" />
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li class="flex gap-2">
+                <Check class="min-w-7" />
+                <p>Lorem ipsum sit amet consectetur.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-		<section id="services" class="py-20 px-5 bg-paragraph-50">
-			<div class="max-w-7xl mx-auto">
-				<header>
-					<p class="text-paragraph-600 md:text-center text-base font-medium">
-						Que hacemos
-					</p>
-					<h2 class="text-primary-800 md:text-center font-bold text-3xl md:text-4xl tracking-wide mb-3 md:mb-10">
-						Nuestros Servicios
-					</h2>
-				</header>
+        <div class="pt-20">
+          <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <article
+                class="relative bg-paragraph-50/50 rounded-lg shadow p-4 flex flex-col gap-2 items-center"
+              >
+                <Mision
+                  class="bg-primary-500 text-white p-1 size-9 rounded-full"
+                />
+                <h3 class="font-medium tracking-wide">Mision</h3>
+                <p class="text-center text-paragraph-800 leading-relaxed">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore, illo quisquam. Deserunt nulla sit rem vel possimus
+                  numquam, voluptates obcaecati.
+                </p>
+              </article>
+              <article
+                class="relative md:-top-10 bg-paragraph-50/50 rounded-lg shadow p-4 flex flex-col gap-2 items-center"
+              >
+                <Valores
+                  class="bg-primary-500 text-white p-1 size-9 rounded-full"
+                />
+                <h3 class="font-medium tracking-wide">Valores</h3>
+                <p class="text-center text-paragraph-800 leading-relaxed">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore, illo quisquam. Deserunt nulla sit rem vel possimus
+                  numquam, voluptates obcaecati.
+                </p>
+              </article>
+              <article
+                class="relative bg-paragraph-50/50 rounded-lg shadow p-4 flex flex-col gap-2 items-center"
+              >
+                <Vision
+                  class="bg-primary-500 text-white p-1 size-9 rounded-full"
+                />
+                <h3 class="font-medium tracking-wide">Vision</h3>
+                <p class="text-center text-paragraph-800 leading-relaxed">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore, illo quisquam. Deserunt nulla sit rem vel possimus
+                  numquam, voluptates obcaecati.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="grid grid-cols-1 auto-rows-[150px] sm:grid-cols-2 md:grid-cols-4 gap-5 place-content-center">
-					<article class="flex flex-col items-center justify-center p-5 gap-2 bg-primary-600 text-white relative top-0 hover:-top-2 transition-all duration-300">
-						<Service class="size-10"/>
-						<p class="text-center font-medium">Lorem ipsum dolor sit amet consectetur.</p>
-					</article>
-					<article class="flex flex-col items-center justify-center p-5 gap-2 bg-primary-600 text-white relative top-0 hover:-top-2 transition-all duration-300">
-						<Service class="size-10"/>
-						<p class="text-center font-medium">Lorem ipsum dolor sit amet consectetur.</p>
-					</article>
-					<article class="flex flex-col items-center justify-center p-5 gap-2 bg-primary-600 text-white relative top-0 hover:-top-2 transition-all duration-300">
-						<Service class="size-10"/>
-						<p class="text-center font-medium">Lorem ipsum dolor sit amet consectetur.</p>
-					</article>
-					<article class="flex flex-col items-center justify-center p-5 gap-2 bg-primary-600 text-white relative top-0 hover:-top-2 transition-all duration-300">
-						<Service class="size-10"/>
-						<p class="text-center font-medium">Lorem ipsum dolor sit amet consectetur.</p>
-					</article>
-					<article class="md:col-start-2 flex flex-col items-center justify-center p-5 gap-2 bg-primary-600 text-white relative top-0 hover:-top-2 transition-all duration-300">
-						<Service class="size-10"/>
-						<p class="text-center font-medium">Lorem ipsum dolor sit amet consectetur.</p>
-					</article>
-					<article class="flex flex-col items-center justify-center p-5 gap-2 bg-primary-600 text-white relative top-0 hover:-top-2 transition-all duration-300">
-						<Service class="size-10"/>
-						<p class="text-center font-medium">Lorem ipsum dolor sit amet consectetur.</p>
-					</article>
-					
-					
-				</div>
-			</div>
+    <section id="services" class="py-20 px-5">
+      <div class="max-w-7xl mx-auto">
+        <header>
+          <p class="text-paragraph-600 md:text-center text-base font-medium">
+            Que hacemos
+          </p>
+          <h2
+            class="text-primary-800 md:text-center font-bold text-3xl md:text-4xl tracking-wide mb-3 md:mb-10"
+          >
+            Nuestros Servicios
+          </h2>
+        </header>
 
-		</section>
-	</main>
+        <div class="flex flex-col md:flex-row gap-5 lg:gap-10">
+          <picture class="md:flex-1 h-[400px] relative">
+            <img
+              class="absolute rounded-lg top-[107px] z-10 right-0 h-1/3 w-[55%]"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <img
+              class="absolute rounded-lg bottom-0 z-10 right-0 h-[35%] w-4/5"
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <img
+              class="absolute rounded-lg top-0 left-0 w-[40%] h-[60%]"
+              src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </picture>
+          <div class="md:flex-1 grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <div class="group">
+              <div
+                class="h-full flex rounded-lg overflow-hidden p-5 shadow-lg group-hover:text-primary-500 transition-all duration-1000 ease-in-out relative z-30"
+              >
+                <div
+                  class="absolute -top-0 left-0 w-5 h-0.5 group-hover:h-full group-hover:w-1/2 bg-primary-500/20 z-10 transition-all duration-700 ease-in-out"
+                >
+                </div>
+                <div
+                  class="absolute -top-0 right-0 w-5 h-0.5 group-hover:h-full group-hover:w-1/2 bg-primary-500/20 z-10 transition-all duration-700 ease-in-out"
+                >
+                </div>
+
+                <div class="relative flex justify-center items-center text-center">
+                  <strong class="font-normal">Servicio de mantenimiento de aire acondicionado</strong>
+                </div>
+              </div>
+            </div>
+            <div class="group">
+              <div
+                class="h-full flex rounded-lg overflow-hidden p-5 shadow-lg group-hover:text-primary-500 transition-all duration-1000 ease-in-out relative z-30"
+              >
+                <div
+                  class="absolute -top-0 left-0 w-5 h-0.5 group-hover:h-full group-hover:w-1/2 bg-primary-500/20 z-10 transition-all duration-700 ease-in-out"
+                >
+                </div>
+                <div
+                  class="absolute -top-0 right-0 w-5 h-0.5 group-hover:h-full group-hover:w-1/2 bg-primary-500/20 z-10 transition-all duration-700 ease-in-out"
+                >
+                </div>
+
+                <div class="relative flex justify-center items-center text-center">
+                  <strong class="font-normal">Servicio de reparación y instalación de aire acondicionado</strong>
+                </div>
+              </div>
+            </div>
+            <div class="group">
+              <div
+                class="h-full flex rounded-lg overflow-hidden p-5 shadow-lg group-hover:text-primary-500 transition-all duration-1000 ease-in-out relative z-30"
+              >
+                <div
+                  class="absolute -top-0 left-0 w-5 h-0.5 group-hover:h-full group-hover:w-1/2 bg-primary-500/20 z-10 transition-all duration-700 ease-in-out"
+                >
+                </div>
+                <div
+                  class="absolute -top-0 right-0 w-5 h-0.5 group-hover:h-full group-hover:w-1/2 bg-primary-500/20 z-10 transition-all duration-700 ease-in-out"
+                >
+                </div>
+
+                <div class="relative flex justify-center items-center text-center">
+                  <strong class="font-normal">Servicio de mantenimiento a tableros eléctricos</strong>
+                </div>
+              </div>
+            </div>
+            <div class="group">
+              <div
+                class="h-full flex rounded-lg overflow-hidden p-5 shadow-lg group-hover:text-primary-500 transition-all duration-1000 ease-in-out relative z-30"
+              >
+                <div
+                  class="absolute -top-0 left-0 w-5 h-0.5 group-hover:h-full group-hover:w-1/2 bg-primary-500/20 z-10 transition-all duration-700 ease-in-out"
+                >
+                </div>
+                <div
+                  class="absolute -top-0 right-0 w-5 h-0.5 group-hover:h-full group-hover:w-1/2 bg-primary-500/20 z-10 transition-all duration-700 ease-in-out"
+                >
+                </div>
+
+                <div class="relative flex justify-center items-center text-center">
+                  <strong class="font-normal">Servicio de mantenimiento e instalación de ventilación mecánica	</strong>
+                </div>
+              </div>
+            </div>
+            <div class="group">
+              <div
+                class="h-full flex rounded-lg overflow-hidden p-5 shadow-lg group-hover:text-primary-500 transition-all duration-1000 ease-in-out relative z-30"
+              >
+                <div
+                  class="absolute -top-0 left-0 w-5 h-0.5 group-hover:h-full group-hover:w-1/2 bg-primary-500/20 z-10 transition-all duration-700 ease-in-out"
+                >
+                </div>
+                <div
+                  class="absolute -top-0 right-0 w-5 h-0.5 group-hover:h-full group-hover:w-1/2 bg-primary-500/20 z-10 transition-all duration-700 ease-in-out"
+                >
+                </div>
+
+                <div class="relative flex justify-center items-center text-center">
+                  <strong class="font-normal">Servicio de mantenimiento y reparación de refrigeracion comercial</strong>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="pt-20">
+          <div class="flex flex-col md:flex-row-reverse gap-5 lg:gap-10">
+            <picture class="md:flex-1 h-[400px] relative">
+              <img
+                class="absolute top-0 z-10 rounded-lg left-0 w-4/5 h-3/5 md:w-2/3 md:h-2/3 object-cover"
+                src="https://images.unsplash.com/photo-1561343228-e6a5c693d352?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <img
+                class="absolute bottom-0 rounded-lg right-0 w-4/5 h-3/5 md:w-2/3 md:h-2/3 object-cover"
+                src="https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </picture>
+
+            <div class="md:flex-1 flex flex-col gap-2 lg:gap-6">
+              <h3 class="text-xl lg:text-2xl font-semibold text-secundary-900">
+                Trabajadores de excelencia
+              </h3>
+              <p
+                class="text-paragraph-800 text-base lg:text-lg font-light leading-relaxed text-pretty"
+              >
+                En VentiFresh, nos enorgullece contar con un equipo de técnicos
+                altamente calificados y comprometidos, cuya experiencia y
+                valores son la base de nuestro éxito. Con más de 10 años de
+                experiencia en instalación y mantenimiento de sistemas de aire
+                acondicionado, nuestro equipo está dedicado a brindar un
+                servicio excepcional a nuestros clientes.
+              </p>
+              <ul class="flex flex-col gap-2 text-base lg:text-lg">
+                <li class="flex items-center gap-2">
+                  <Check
+                    class="min-w-7 size-8 p-1 rounded-full text-white bg-primary-400"
+                  />
+                  <p>Experiencia Profesional</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <Check
+                    class="min-w-7 size-8 p-1 rounded-full text-white bg-primary-400"
+                  />
+                  <p>Compromiso con la Excelencia</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <Check
+                    class="min-w-7 size-8 p-1 rounded-full text-white bg-primary-400"
+                  />
+                  <p>Valores que nos distinguen</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
