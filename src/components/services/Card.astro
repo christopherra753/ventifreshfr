@@ -1,0 +1,8 @@
+---
+const { content } = Astro.props;
+---
+
+<article class="flex items-center gap-5">
+  <slot/>
+  <p class="text-paragraph-800 leading-relaxed text-base">{content}</p>
+</article>

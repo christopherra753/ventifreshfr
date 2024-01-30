@@ -1,0 +1,114 @@
+---
+import "photoswipe/style.css";
+---
+
+<section id="works" class="max-w-7xl mx-auto flex flex-col gap-10 px-5">
+  <section class="max-w-xl mx-auto lg:max-w-none lg:mx-0">
+    <h2 class="text-primary-600 font-bold text-2xl lg:text-5xl lg:text-center">
+      Trabajos
+    </h2>
+    <p class="text-paragraph-800 text-base leading-relaxed lg:text-center max-w-4xl mx-auto">
+      Explora nuestra galería de últimos trabajos para obtener una visión
+      detallada de los proyectos más recientes de VentiFresh. Desde
+      instalaciones impecables hasta mantenimientos especializados, cada imagen
+      cuenta una historia de dedicación y excelencia en nuestro compromiso con
+      la calidad y la satisfacción del cliente.
+    </p>
+  </section>
+
+  <section class="max-w-xl mx-auto lg:max-w-none lg:mx-0">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 auto-rows-[200px]"
+      id="gallery"
+    >
+      <a
+        href="/galeria1-2400-1800.jpg"
+        data-pswp-width="2400"
+        data-pswp-height="1800"
+        data-cropped="true"
+        target="_blank"
+      >
+        <img
+          src="/galeria1-640-480.jpg"
+          alt=""
+          class="w-full h-full object-cover rounded-lg"
+        />
+      </a>
+      <a
+        href="/galeria2-2400-2400.jpg"
+        data-pswp-width="2400"
+        data-pswp-height="2400"
+        data-cropped="true"
+        target="_blank"
+      >
+        <img
+          src="/galeria2-640-640.jpg"
+          alt=""
+          class="w-full h-full object-cover rounded-lg"
+        />
+      </a>
+      <a
+        href="/galeria3-2400-3602.jpg"
+        data-pswp-width="2400"
+        data-pswp-height="3602"
+        data-cropped="true"
+        target="_blank"
+      >
+        <img
+          src="/galeria3-640-961.jpg"
+          alt=""
+          class="w-full h-full object-cover rounded-lg"
+        />
+      </a>
+      <a
+        href="/galeria4-2400-1625.jpg"
+        data-pswp-width="2400"
+        data-pswp-height="1625"
+        data-cropped="true"
+        target="_blank"
+      >
+        <img
+          src="/galeria4-640-433.jpg"
+          alt=""
+          class="w-full h-full object-cover rounded-lg"
+        />
+      </a>
+      <a
+        href="/galeria5-2400-1600.jpg"
+        data-pswp-width="2400"
+        data-pswp-height="1600"
+        data-cropped="true"
+        target="_blank"
+      >
+        <img
+          src="/galeria5-640-427.jpg"
+          alt=""
+          class="w-full h-full object-cover rounded-lg"
+        />
+      </a>
+      <a
+        href="/galeria6-2400-3747.jpg"
+        data-pswp-width="2400"
+        data-pswp-height="3747"
+        data-cropped="true"
+        target="_blank"
+      >
+        <img
+          src="/galeria6-640-999.jpg"
+          alt=""
+          class="w-full h-full object-cover rounded-lg"
+        />
+      </a>
+    </div>
+  </section>
+</section>
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+  });
+  lightbox.init();
+</script>

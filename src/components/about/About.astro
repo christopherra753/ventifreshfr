@@ -1,0 +1,74 @@
+---
+import Vision from "../../icons/Vision.astro";
+import Valores from "../../icons/Valores.astro";
+import Check from "../../icons/Check.astro";
+import Card from "./Card.astro";
+import Mision from "../../icons/Mision.astro";
+---
+
+<section id="about" class="max-w-7xl mx-auto px-5 flex flex-col gap-10">
+  <section
+    class="max-w-xl mx-auto lg:max-w-none lg:mx-0 flex flex-col gap-5 lg:flex-row-reverse lg:justify-center lg:gap-20 lg:items-center lg"
+  >
+    <div class="flex flex-col gap-2">
+      <h2 class="text-primary-600 font-bold text-2xl">Nosotros</h2>
+      <p class="text-paragraph-800 font-normal text-base leading-relaxed">
+        Estamos emocionados por comenzar nuestro viaje en el mundo de los
+        servicios de instalación y mantenimiento en sistemas de aire
+        acondicionado. Aunque somos una empresa recién iniciada, nuestra
+        dedicación y compromiso con la excelencia nos impulsan hacia el
+        liderazgo en el sector.
+      </p>
+      <ul class="flex flex-col gap-2 text-sm">
+        <li class="flex items-center gap-2">
+          <Check class="min-w-7 size-7 text-primary-500" />
+          <p class="text-paragraph-800">
+            Ofrecemos servicios con calidad insuperable.
+          </p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Check class="min-w-7 size-7 text-primary-500" />
+          <p class="text-paragraph-800">
+            Nos dedicamos a garantizar satisfacción total.
+          </p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Check class="min-w-7 size-7 text-primary-500" />
+          <p class="text-paragraph-800">
+            Nuestro equipo destaca por profesionalismo y eficiencia.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <img
+        class="w-full h-64 lg:h-full object-cover rounded-lg"
+        src="https://images.unsplash.com/photo-1482286571573-959937392112?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+    </div>
+  </section>
+
+  <section
+    class="max-w-xl mx-auto lg:max-w-none lg:mx-0 grid grid-cols-1 lg:grid-cols-3 gap-10"
+  >
+    <Card
+      title="Mision"
+      content="Nos dedicamos a ofrecer soluciones de climatización excepcionales que crean ambientes confortables y contribuyen al bienestar de la comunidad."
+    >
+      <Mision class="bg-white/80 text-primary-500 p-1 size-12 rounded-lg" />
+    </Card>
+    <Card
+      title="Valores"
+      content="Nos destacamos por ofrecer servicios de alta calidad con integridad y profesionalismo. Nos comprometemos a cumplir nuestras promesas, actuando con honestidad y eficiencia en cada proyecto."
+    >
+      <Valores class="bg-white/80 text-primary-500 p-1 size-12 rounded-lg" />
+    </Card>
+    <Card
+      title="Vision"
+      content="Buscamos ser la opción líder en instalación y mantenimiento de aire acondicionado, destacando en excelencia, innovación y satisfacción del cliente establecer estándares de calidad que superen expectativas de mercado."
+    >
+      <Vision class="bg-white/80 text-primary-500 p-1 size-12 rounded-lg" />
+    </Card>
+  </section>
+</section>

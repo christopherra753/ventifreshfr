@@ -1,0 +1,82 @@
+---
+import Check from "../../icons/Check.astro"
+import Snow from "../../icons/Snow.astro"
+import Card from "../services/Card.astro"
+---
+
+<section id="services" class="max-w-7xl mx-auto flex flex-col gap-20 px-5">
+  <section class="flex flex-col gap-10">
+    <div class="max-w-xl mx-auto lg:max-w-none lg:mx-0 flex flex-col gap-1">
+      <h2 class="text-primary-600 font-bold text-2xl lg:text-5xl lg:text-center">
+        Servicios
+      </h2>
+      <p class="text-paragraph-800 text-base leading-relaxed lg:text-center max-w-4xl mx-auto">
+        Descubra nuestra amplia variedad de servicios especializados y soluciones personalizadas en VentiFresh. Nos comprometemos a brindar opciones completas y excepcionales para su comodidad y bienestar, abordando todas sus necesidades de manera integral.
+      </p>
+    </div>
+  
+    <div class="max-w-xl mx-auto lg:max-w-none lg:mx-0 grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <Card content="Servicio de mantenimiento de aire acondicionado">
+        <Snow class="bg-primary-500 text-white size-16 min-w-16 p-1 rounded-lg" />
+      </Card>
+      <Card content="Servicio de reparación y instalación de aire acondicionado">
+        <Snow class="bg-primary-500 text-white size-16 min-w-16 p-1 rounded-lg" />
+      </Card>
+      <Card content="Servicio de mantenimiento a tableros eléctricos">
+        <Snow class="bg-primary-500 text-white size-16 min-w-16 p-1 rounded-lg" />
+      </Card>
+      <Card content="Servicio de mantenimiento e instalación de ventilación mecánica">
+        <Snow class="bg-primary-500 text-white size-16 min-w-16 p-1 rounded-lg" />
+      </Card>
+      <Card content="Servicio de mantenimiento y reparación de refrigeracion comercial">
+        <Snow class="bg-primary-500 text-white size-16 min-w-16 p-1 rounded-lg" />
+      </Card>
+    </div>
+  </section>
+
+  <section class="flex flex-col lg:items-center lg:flex-row-reverse gap-10">
+    <div class="lg:flex-1 h-[400px] relative w-full max-w-xl mx-auto lg:mx-0">
+      <img
+      class="absolute top-0 z-10 rounded-lg left-0 w-4/5 h-3/5 lg:w-2/3 lg:h-2/3 object-cover"
+      src="https://images.unsplash.com/photo-1561343228-e6a5c693d352?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt=""
+    />
+    <img
+      class="absolute bottom-0 rounded-lg right-0 w-4/5 h-3/5 lg:w-2/3 lg:h-2/3 object-cover"
+      src="https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt=""
+    />
+    </div>
+
+    <div class="lg:flex-1 flex flex-col gap-2 max-w-xl mx-auto lg:max-w-none lg:mx-0">
+      <h3 class="font-semibold text-black text-2xl">
+        Trabajadores de excelencia
+      </h3>
+      <p
+        class="text-paragraph-800 leading-relaxed text-pretty"
+      >
+        En VentiFresh, nos enorgullece contar con un equipo de técnicos
+        altamente calificados y comprometidos, cuya experiencia y
+        valores son la base de nuestro éxito. Con más de 10 años de
+        experiencia en instalación y mantenimiento de sistemas de aire
+        acondicionado, nuestro equipo está dedicado a brindar un
+        servicio excepcional a nuestros clientes.
+      </p>
+      <ul class="flex flex-col gap-2 text-sm">
+        <li class="flex items-center gap-2">
+          <Check class="min-w-7 size-7 text-primary-500" />
+          <p class="text-paragraph-800">Experiencia Profesional</p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Check class="min-w-7 size-7 text-primary-500" />
+          <p class="text-paragraph-800">Compromiso con la Excelencia</p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Check class="min-w-7 size-7 text-primary-500" />
+          <p class="text-paragraph-800">Valores que nos distinguen</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</section>
