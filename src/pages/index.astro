@@ -1,16 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
 import Nav from "../components/nav/Nav.astro"
 import Header from "../components/header/Header.astro"
 import About from "../components/about/About.astro";
 import Services from "../components/services/Services.astro"
 import Works from "../components/works/Works.astro"
 import Contact from "../components/contact/Contact.astro"
-
-
-
-
+import Footer from "../components/footer/Footer.astro"
 ---
 
 <Layout title="VentiFresh F&R">
@@ -22,33 +18,7 @@ import Contact from "../components/contact/Contact.astro"
     <Works />
     <Contact />
   </main>
-
-  
-
-<footer class="bg-primary-200/50">
-  <div class="w-full max-w-screen-xl px-10 py-5 mx-auto">
-      <div class="sm:flex sm:items-center sm:justify-between">
-          <a href="#home" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-              <img src="/logo.png" class="h-20" alt="Ventifresh F&R" />
-          </a>
-          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
-              <li>
-                  <a href="#about" class="hover:underline me-4 md:me-6">Nostros</a>
-              </li>
-              <li>
-                  <a href="#services" class="hover:underline me-4 md:me-6">Servicios</a>
-              </li>
-              <li>
-                  <a href="#works" class="hover:underline me-4 md:me-6">Trabajos</a>
-              </li>
-              <li>
-                  <a href="#contact" class="hover:underline">Contact</a>
-              </li>
-          </ul>
-      </div>
-  </div>
-</footer>
-
+  <Footer />
 </Layout>
 
 <style is:global>
@@ -56,8 +26,5 @@ import Contact from "../components/contact/Contact.astro"
     scroll-margin-top: 120px;
   }
 
-
-
-  
 </style>
 
